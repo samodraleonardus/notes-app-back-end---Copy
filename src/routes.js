@@ -1,11 +1,8 @@
-/* eslint-disable no-trailing-spaces */
-/* eslint-disable no-multiple-empty-lines */
-
-const { 
-  addNoteHandler, 
-  getAllNotesHandler, 
-  getNoteByIdHandler, 
-  editNoteByIdHandler, 
+const {
+  addNoteHandler,
+  getAllNotesHandler,
+  getNoteByIdHandler,
+  editNoteByIdHandler,
   deleteNoteByIdHandler,
 } = require('./handler');
 
@@ -13,7 +10,7 @@ const routes = [
   {
     method: 'POST',
     path: '/notes',
-    handler: addNoteHandler,    
+    handler: addNoteHandler,
   },
   {
     method: 'GET',
@@ -37,7 +34,5 @@ const routes = [
   },
 
 ];
-
-
 
 module.exports = routes;
