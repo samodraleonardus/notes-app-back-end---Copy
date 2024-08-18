@@ -116,7 +116,7 @@ const init = async () => {
   server.ext('onPreResponse', (request, h) => {
     // mendapatkan konteks response dari request
     const { response } = request;
-    // console.log(response);
+    // console.log(response) // untuk mecetak/melihat error;
     // penanganan client error secara internal.
     if (response instanceof ClientError) {
       const newResponse = h.response({
